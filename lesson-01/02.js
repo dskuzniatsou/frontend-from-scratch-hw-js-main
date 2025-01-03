@@ -6,4 +6,10 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+let natNumber = 1;
+while (natNumber<=10) {
+  factorial = factorial*natNumber;
+  natNumber++
+}
+console.log('факториал числа 10! = ' + factorial);
