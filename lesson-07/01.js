@@ -9,4 +9,9 @@
 function capitalizeWords(str) {
   return str.replace(/(?:^|\s)(\S)/ug, m => m.toUpperCase());
 }
+// function capitalizeWords(str) {
+//   return str.split(' ') // Шаг 1: Разделяем строку на массив слов
+//             .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Шаг 2: Капитализируем первое слово
+//             .join(' '); // Шаг 3: Объединяем массив обратно в строку
+// }
 console.log(capitalizeWords('hello world from javascript'));
